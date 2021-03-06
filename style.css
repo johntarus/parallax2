@@ -1,0 +1,95 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    color: #666;
+    font-weight: 400;
+
+}
+.bg1, .bg2, .bg3{
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;  
+    background-repeat: no-repeat;
+    
+    background-attachment: fixed;
+}
+
+.bg1{
+    background: url(bg3.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+.bg2{
+    background: url(bg.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+}
+
+.bg3{
+    background: url(bg2.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    width: 350px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 8px;
+    color: #000;
+}
+
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+.ptext .border.transparent{
+    background-color: transparent;
+}
+footer{
+    height: 5%;
+    background: #282e34;
+    align-items: center;
+}
+
+footer h6{
+    text-align: center;
+    color: #ddd;
+}
+
+@media(max-width:568px){
+    .bg1, .bg2, .bg3{
+        background-attachment: scroll;
+    }
+    .ptext{
+        width: max-content;
+        left: 5%;
+    }
+
+}
+@media(max-width:568px){
+    .ptext .border.transparent{
+        left: 40%;
+    }
+}
